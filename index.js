@@ -1,7 +1,5 @@
 const {Client, Collection, Events, GatewayIntentBits, MessageFlags, SlashCommandBuilder, Guild} = require("discord.js");
 const {token, guildId} = require("./config.json");
-const path = require('node:path');
-const fs = require('node:fs');
 
 const client = new Client({intents: [GatewayIntentBits.GuildVoiceStates]});
 let guild = null;
